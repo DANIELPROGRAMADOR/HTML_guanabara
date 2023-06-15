@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é o meu primeiro site">
+    <meta name="keywords" content="curso,aplicativos,html,css">
+    <meta name="author" content="Daniel Santos">
+    <title>audio</title>
+</head>
+
+<body>
+    <h1>Reproduzindo Áuidios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <audio preload="metadata" controls>
+        <source src="audios/Soulicious - Dyalla.mp3" type="audio/mpeg">
+        <source src="audios/Soulicious - Dyalla.ogg" type="audio/ogg">
+        <source src="audios/Soulicious - Dyalla.wav" type="audio/wav">
+    <!--EVITE USAR O "WAV" ELE É EXTRAMAMENTE PESADO-->
+
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="audios/Soulicious - Dyalla.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
