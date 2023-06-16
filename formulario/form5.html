@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é o meu primeiro site">
+    <meta name="keywords" content="curso,aplicativos,html,css">
+    <meta name="author" content="Daniel Santos">
+    <title>Document</title>
+</head>
+
+<body>
+
+<!--podemos usar "checked" dentro de input para quando o usuario entrar na pagina ele ja esteja marcado por padrão-->
+
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+               <input type="radio" name="sexo" id="isexmasculino" value="M"><label for="isexmasculino">Masculino</label>
+<br><br>
+               <input type="radio" name="sexo" id="isexfeminino" value="F"><label for="isexfeminino">Feminino</label>
+        </fieldset>   
+        
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+                <input type= "checkbox" name="futebol" id="ifutebol"><label for="ifutebol">Futebol</label> 
+<br> <br>
+                <input type= "checkbox" name="basquete" id="ibasquete"><label for="ibasquete">Basquete</label>
+<br> <br>
+                <input type= "checkbox" name="golf" id="igolf"><label for="igolf">Golf</label> 
+<br> <br>
+                <input type= "checkbox" name="volei" id="ivolei"><label for="ivolei">Vôlei </label>
+        </fieldset>
+<br>
+           <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

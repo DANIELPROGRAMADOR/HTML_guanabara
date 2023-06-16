@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é o meu primeiro site">
+    <meta name="keywords" content="curso,aplicativos,html,css">
+    <meta name="author" content="Daniel Santos">
+    <title>form4</title>
+</head>
+
+<body>
+     <!--com o "fieldset podemos agrupar o formulario em uma 'caixa' e com o "legend" determinamos a legenda do nosso agrupamento-->
+
+
+
+
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required placeholder="Digite seu E-mail">
+            </div>
+            <br>
+            <div>
+                <label for="itel">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" required placeholder="(00) 55555-5555" autocomplete="tel">
+            </div>
+                <!--estudar sobre "RegEx"-->
+        </fieldset>
+<br>    
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        
+    </form>
+</body>
+</html>

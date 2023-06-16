@@ -13,35 +13,35 @@
 
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post">
         <div>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+            <label for="iusu">Usuário</label>
+            <input type="text" name="usu" id="iusu"  required minlength="5" maxlength="15" placeholder="Nome do Usuário" autocomplete="username">
+    <!--com o atributo "required" dizemos ao usuário que aquele campo é obrigatório -->
+
+     <!--com o atributo "minlength" dizemos ao usuario quantas letras no minimo o campo deve ter (no caso 3, ou seja menos que isso nao funcionara)-->
+
+    <!--com o atributo "maxlength" dizemos ao navegador/usuário quantas letras no máximo o campo vai ter (no caso 15, ou seja mais que isso nao vai permitir)-->
+
+    <!--com o atributo "placeholder" colocamos uma marca d'água para auxiliar o usuário dizendo o que deve ser escrito no campo-->
         </div>
 <br>
         <div>
-            <label for="imedia">Média:</label>
-            <input type="number" name="media" id="imedia" required min="0" max="10"  placeholder="0 a 10" step="0.5">
-    <!--o atributo "step "(passo) diz de quanto em quanto o nume vai subir-->
+            <label for="isen">Senha:</label>
+            <input type="password" name="Senha" id="isen" required minlength="8" maxlength="15" size="12" placeholder="mínimo de 8 letras">
+    <!--input com o type "password" é o input do tipo senha-->
+
+    <!--com o atributo "size" determinamos o tamanho da caixa de digitaçao-->
+
         </div>
 <br>
         <div>
-            <label for="imes">Mês:</label>
-            <input type="month" name="mes" id="imes">
-        </div>
-<br>
-        <div>
-            <label for="idata">Data:</label>
-            <input type="date" name="data" id="idata">
-        </div>
-<br>
-        <div>
-            <label for="ihora">Hora da Prova:</label>
-            <input type="time" name="hora" id="ihora">
-        </div>
-<br>
             <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+    <!--com o input do tupo type com "reset" criamos um botão de limpar onde o usuario pode limpar os dados se achar necessario-->
         </div>
     </form>
+    <a href="index.html">Voltar</a>
+    <a href="form2.html">formulário2</a>
 </body>
 </html>
