@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é o meu primeiro site">
+    <meta name="keywords" content="curso,aplicativos,html,css">
+    <meta name="author" content="Daniel Santos">
+    <title>form7</title>
+</head>
+<body>
+
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post">
+    <div>
+        <label for="iestado">Estado</label>
+        <select name="estado" id="iestado">
+            <optgroup label="Região Sudeste">
+        <!--com este comando separamos nossos elementos por grupos-->
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+        <!--com esta tag "selected" criamos uma lista-->
+    </div>
+<br>
+    <div>
+        <label for="iprof">Profissaão:</label>
+        <input type="text" name="Profissaão" id="iprof" list="listprof">
+        <datalist id="listprof">
+            <option value="DEV" class="profissao">Desenvolvedor</option>
+            <option value="ADM">Administração</option>
+            <option>Professor</option>
+            <option>Nada</option>
+        </datalist>
+    <!--assim podemos tambem criar uma lista, mas com muito mais opçoes de ajuda ao usuario na pesquisa-->
+    </div>
+<br>
+    <div>
+        <label for="imsg">Mensagem:</label> <br>
+        <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+    <!--com esta tag craimos uma caixa de mensagens com colunas (cols) vindas por padrao de 30 e linhas (rows) de 10...as linhas sao definidas apenas como layout ao usuario mas ele pode escrever quantas linhas quiser-->   
+ </div>
+<br>
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+    </form>
+    
+</body>
+</html>
